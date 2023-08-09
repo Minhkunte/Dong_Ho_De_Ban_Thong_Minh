@@ -1,0 +1,5 @@
+Compiling C:\Users\minhn\Downloads\DOAN3_VUNGOCMINH\Donghovannang on 21-Nov-22 at 23:05
+>>> Warning 202 "C:\Users\minhn\Downloads\DOAN3_VUNGOCMINH\Donghovannang.c" Line 44(15,18): Variable never used:   str
+      Memory usage:   ROM=30%      RAM=16% - 20%
+      0 Errors,  1 Warnings.
+Build Successful.

@@ -1,0 +1,191 @@
+004-005 @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+006.0   DHT_DATA_OUT
+006.0   DHT_DATA_IN
+008     PSP_DATA
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     c_g
+022     dv_g
+023     c_p
+024     dv_p
+025     c_h
+026     dv_h
+027     thu
+028     c_d
+029     dv_d
+02A     c_t
+02B     dv_t
+02C     c_n
+02D     dv_n
+02E-034 mang_tg_rtc
+035     h1
+036     p1
+037     g1
+038     dang_bao_thuc
+039     dh_nhiet_do
+03A     dh_nhiet_do2
+03B     dh_do_am
+03C     dh_do_am2
+03D-050 str
+051-052 @sprintf_string
+053     MAIN.nho_giay
+054-058 DHT_GetTemHumi.buffer
+054     @PSTRINGCN7_640.P1
+054     chinh_gio.mode
+054     chinh_bt.mode
+054     rtc_init.a
+054     lcd_init.i
+054     @PRINTF_U_640.P1
+054     hienthinhietdo.@SCRATCH1
+054     MAIN.@SCRATCH1
+055     chinh_bt.i
+055     @PRINTF_U_640.P1
+055     chinh_gio.i
+055-058 lcd_init.LCD_INIT_STRING
+055     @PSTRINGCN7_640.@SCRATCH1
+055     rtc_init.@SCRATCH1
+056     hienthi2.m
+056     chinh_gio.t
+056     @PSTRINGCN7_640.@SCRATCH2
+056     chinh_bt.@SCRATCH1
+057     @DIV88.P1
+057     @MUL88.P2
+057-058 ReadRTC.buff
+057     hienthi1.m
+057-058 WriteRTC.buff
+057     hienthi2.@SCRATCH1
+057     @PSTRINGCN7_640.@SCRATCH3
+057     chinh_gio.@SCRATCH1
+058     @DIV88.P1
+058     @MUL88.P2
+058     hienthi1.@SCRATCH1
+058     @PSTRINGC7_640.@SCRATCH1
+058     @PSTRINGCN7_640.@SCRATCH4
+059     DHT_GetTemHumi.ii
+059     lcd_init.@SCRATCH1
+059     @PSTRINGC7_640.@SCRATCH2
+059     @DIV88.@SCRATCH1
+059     ReadRTC.@SCRATCH1
+059     WriteRTC.@SCRATCH1
+05A     @I2C_WRITEU_129.P1
+05A     DHT_GetTemHumi.i
+05A     @PSTRINGC7_640.@SCRATCH3
+05A     ReadRTC.@SCRATCH2
+05B     DHT_GetTemHumi.checksum
+05B     @I2C_READU_129.P1
+05B     lcd_putc.s
+05B     @PSTRINGC7_640.@SCRATCH4
+05C     lcd_gotoxy.x
+05C     DHT_GetTemHumi.@SCRATCH1
+05D     lcd_gotoxy.y
+05D     DHT_GetTemHumi.@SCRATCH2
+05E     lcd_gotoxy.address
+05E     DHT_GetTemHumi.@SCRATCH3
+05F     lcd_gotoxy.@SCRATCH1
+060     lcd_send_byte.address
+061     lcd_send_byte.n
+062     lcd_read_byte.low
+062     lcd_send_byte.@SCRATCH1
+063     lcd_send_nibble.n
+063     lcd_read_byte.high
+064     lcd_read_nibble.n
+064     @delay_ms1.P1
+064     lcd_read_byte.@SCRATCH1
+065     lcd_read_nibble.@SCRATCH1
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+086.0   DHT_DDR_DATA
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const685.call
+000008  @const695.call
+00000B  @const696.call
+00000E  @const703.call
+000011  @const706.call
+000014  @const716.call
+00001B  @const722.call
+000023  @const727.call
+00002B  @const728.call
+000032  @const729.call
+00003B  @const735.call
+000045  @delay_ms1
+00005D  lcd_send_nibble
+00008D  lcd_read_nibble
+0000BE  lcd_send_byte
+0000C6  lcd_read_byte
+00011C  lcd_init
+000162  @I2C_WRITEU_129
+000172  @I2C_READU_129
+000182  rtc_init
+0001B6  lcd_gotoxy
+0001C8  lcd_putc
+0001EC  @PSTRINGC7_640
+000242  ReadRTC
+0002CB  convert_bcd
+0002F8  hienthi1
+0003AC  @PSTRINGCN7_640
+000403  @DIV88
+000418  @PRINTF_U_640
+00044D  hienthinhietdo
+00044D  DHT_GetTemHumi
+000508  @MUL88
+00052D  chinh_gio
+00071E  WriteRTC
+00079B  @goto22407
+0007A5  @goto22449
+000800  hienthi2
+00089A  chinh_bt
+000934  @cinit1
+000934  MAIN
+000958  @cinit2
+
+Project Directory:
+    C:\Users\minhn\Downloads\DOAN3_VUNGOCMINH\
+
+Project Files:
+    Donghovannang.c                                         [21-Nov-22 23:05  CRC=5D6E7FB5]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h  [18-Apr-14 16:56  CRC=4F277C97]
+    DHT11.H                                                 [21-Nov-22 21:30  CRC=09DA1B37]
+    ..\..\..\..\Program Files (x86)\PICC\Drivers\stddef.h   [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c      [21-Nov-22 16:37  CRC=CF6EBE94]
+
+Source signature=DECA8117
+Program memory checksum=0000
+Hex file CRC=E0D3
+
+Units:
+    C:\Users\minhn\Downloads\DOAN3_VUNGOCMINH\Donghovannang (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:   CCS5
+
+Output Files:
+    XREF file:   Donghovannang.xsym
+    Errors:      Donghovannang.err
+    Ext Symbols: Donghovannang.esym
+    INHX8:       Donghovannang.hex
+    Symbols:     Donghovannang.sym
+    List:        Donghovannang.lst
+    Debug/COFF:  Donghovannang.cof
+    Project:     Donghovannang.ccspjt
+    Call Tree:   Donghovannang.tre
+    Statistics:  Donghovannang.STA

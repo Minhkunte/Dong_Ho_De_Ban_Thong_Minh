@@ -1,0 +1,102 @@
+[PROJECT]
+Target=Donghovannang.hex
+Processor_Text=PIC16F877A
+CCSVerions=5.101
+Compiler=PCM
+CCSVersion=5.101
+[Target Data]
+FileList=Donghovannang.c
+[Directories]
+Include=
+[E:\DOAN3_VUNGOCMINH\Donghovannang]
+Type=4
+[mru-list]
+1=Donghovannang.c
+
+[ProjectLog]
+Days=6
+D1=21-11-2022
+D1_L=39
+D1_L1=[45510]Project Opened.
+D1_L2=[45594]Started Editing.
+D1_L3=[46029]Stopped Editing.
+TotalEdit=83
+TotalDebug=0
+D1_E=83
+D1_D=0
+D1_L4=[47559]Project Closed.
+D1_L5=[50596]Project Opened.
+D1_L6=[50821]Started Editing.
+D1_L7=[51159]Stopped Editing.
+D1_L8=[58940]Started Editing.
+D1_L9=[59003]Stopped Editing.
+D1_L10=[59024]Started Editing.
+D1_L11=[59375]Stopped Editing.
+D1_L12=[59466]Project Closed.
+D1_L13=[59910]Project Opened.
+D1_L14=[59970]Started Editing.
+D1_L15=[60342]Stopped Editing.
+D1_L16=[60342]Project Closed.
+D1_L17=[72155]Project Opened.
+D1_L18=[74386]Project Opened.
+D1_L19=[74456]Started Editing.
+D1_L20=[74707]Stopped Editing.
+D1_L21=[75184]Started Editing.
+D1_L22=[75249]Stopped Editing.
+D1_L23=[75249]Project Closed.
+D1_L24=[75274]Project Opened.
+D1_L25=[75311]Project Closed.
+D1_L26=[75849]Project Opened.
+D1_L27=[75923]Started Editing.
+D1_L28=[76972]Stopped Editing.
+D1_L29=[77339]Project Closed.
+D1_L30=[77476]Project Opened.
+D1_L31=[77499]Started Editing.
+D1_L32=[77810]Stopped Editing.
+D1_L33=[77860]Started Editing.
+D1_L34=[78164]Stopped Editing.
+D1_L35=[80660]Started Editing.
+D1_L36=[81518]Stopped Editing.
+D1_L37=[81611]Started Editing.
+D1_L38=[83395]Stopped Editing.
+D1_L39=[83395]Project Closed.
+D2=01-12-2022
+D2_L=1
+D2_L1=[43621]Project Opened.
+D3=02-12-2022
+D3_L=1
+D3_L1=[44]Project Closed.
+D4=04-12-2022
+D4_L=2
+D4_L1=[79967]Project Opened.
+D4_L2=[80638]Project Closed.
+D5=06-12-2022
+D5_L=2
+D5_L1=[58639]Project Opened.
+D5_L2=[58964]Project Closed.
+D6=12-12-2022
+D6_L=2
+D6_L1=[53318]Project Opened.
+D6_L2=[53363]Project Closed.
+
+[Opened Files]
+1=Donghovannang.c
+2=E:\Doan3\CD4.c
+3=
+4=
+5=
+6=
+t1=205
+t2=1
+Count=1
+[Donghovannang.c]
+Type=4
+
+[fileformats]
+forcecoff=0
+
+[defines]
+buildcount=18
+[Units]
+Count=1
+1=Donghovannang (main)
